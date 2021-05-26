@@ -1,0 +1,809 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="RockoFLF.ttf">
+            <string>RockoFLF</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Temp View Controller-->
+        <scene sceneID="RTo-C3-7SX">
+            <objects>
+                <viewController id="yAI-22-s3u" customClass="TempViewController" customModule="JoackyWriter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Oke-XJ-UHp"/>
+                        <viewControllerLayoutGuide type="bottom" id="4tq-Gp-lOH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tng-TA-qJ6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="S4a-UY-luE">
+                                <rect key="frame" x="0.0" y="88" width="414" height="400"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SLY-4N-JXg">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xw-T3-DRz">
+                                                <rect key="frame" x="0.0" y="198" width="414" height="2"/>
+                                                <color key="backgroundColor" red="0.1091250554" green="0.34693574910000002" blue="0.52093160149999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="2" id="Edr-vg-gAF"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                        <constraints>
+                                            <constraint firstItem="4xw-T3-DRz" firstAttribute="leading" secondItem="SLY-4N-JXg" secondAttribute="leading" id="9N8-tb-Tfb"/>
+                                            <constraint firstAttribute="bottom" secondItem="4xw-T3-DRz" secondAttribute="bottom" id="fee-ov-LTO"/>
+                                            <constraint firstAttribute="trailing" secondItem="4xw-T3-DRz" secondAttribute="trailing" id="mt6-Rf-8NR"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gmw-5i-928">
+                                        <rect key="frame" x="0.0" y="200" width="414" height="200"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YSf-ET-IJX" userLabel="MainImageView">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AfN-In-eIV" userLabel="TempImageView">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4eN-YM-maG" userLabel="MImageView">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Bb-F6-bgz" userLabel="TImageView">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qc7-aT-mTF">
+                                <rect key="frame" x="0.0" y="488" width="414" height="408"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1T-o1-Zcp">
+                                <rect key="frame" x="16" y="488" width="382" height="298"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="RockoFLF" family="RockoFLF" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="RockoFLF" family="RockoFLF" pointSize="45"/>
+                                </variation>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="Gmn-yE-2DR">
+                                <rect key="frame" x="129" y="794" width="156" height="48"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QeT-pr-KU7">
+                                        <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="XUA-rs-Q4C"/>
+                                            <constraint firstAttribute="width" constant="48" id="ldw-4X-3nX"/>
+                                        </constraints>
+                                        <state key="normal" image="clear"/>
+                                        <connections>
+                                            <action selector="resetPressed:" destination="yAI-22-s3u" eventType="touchUpInside" id="Fjn-nl-BZF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nco-fn-gzb">
+                                        <rect key="frame" x="108" y="0.0" width="48" height="48"/>
+                                        <state key="normal" image="amplifier"/>
+                                        <connections>
+                                            <action selector="sharePressed:" destination="yAI-22-s3u" eventType="touchUpInside" id="BxO-fk-W5L"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4of-Zm-hm1"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4eN-YM-maG" firstAttribute="leading" secondItem="7Bb-F6-bgz" secondAttribute="leading" id="03R-Nf-714"/>
+                            <constraint firstItem="Qc7-aT-mTF" firstAttribute="trailing" secondItem="4of-Zm-hm1" secondAttribute="trailing" id="0UB-JW-4He"/>
+                            <constraint firstItem="k1T-o1-Zcp" firstAttribute="height" secondItem="tng-TA-qJ6" secondAttribute="height" multiplier="0.5" constant="-150" id="6xX-yn-NCH"/>
+                            <constraint firstItem="AfN-In-eIV" firstAttribute="trailing" secondItem="4of-Zm-hm1" secondAttribute="trailing" id="AAT-Op-gE3"/>
+                            <constraint firstItem="AfN-In-eIV" firstAttribute="leading" secondItem="4of-Zm-hm1" secondAttribute="leading" id="BcL-aJ-XZj"/>
+                            <constraint firstAttribute="bottom" secondItem="YSf-ET-IJX" secondAttribute="bottom" id="Fj6-bS-RYn"/>
+                            <constraint firstItem="4eN-YM-maG" firstAttribute="top" secondItem="7Bb-F6-bgz" secondAttribute="top" id="Fvb-fl-4Y4"/>
+                            <constraint firstItem="YSf-ET-IJX" firstAttribute="top" secondItem="4of-Zm-hm1" secondAttribute="top" id="Htq-uj-bwP"/>
+                            <constraint firstItem="4of-Zm-hm1" firstAttribute="bottom" secondItem="Gmn-yE-2DR" secondAttribute="bottom" constant="20" id="JAh-yp-n3d"/>
+                            <constraint firstItem="4eN-YM-maG" firstAttribute="trailing" secondItem="7Bb-F6-bgz" secondAttribute="trailing" id="JIg-cc-ge3"/>
+                            <constraint firstItem="7Bb-F6-bgz" firstAttribute="height" secondItem="AfN-In-eIV" secondAttribute="height" id="MK5-rl-vJw"/>
+                            <constraint firstAttribute="bottom" secondItem="7Bb-F6-bgz" secondAttribute="bottom" id="Ri4-mG-0lh"/>
+                            <constraint firstItem="Gmn-yE-2DR" firstAttribute="centerX" secondItem="tng-TA-qJ6" secondAttribute="centerX" id="Svi-yd-dPt"/>
+                            <constraint firstItem="4eN-YM-maG" firstAttribute="bottom" secondItem="7Bb-F6-bgz" secondAttribute="bottom" id="TwZ-hS-4lg"/>
+                            <constraint firstItem="Qc7-aT-mTF" firstAttribute="top" secondItem="S4a-UY-luE" secondAttribute="bottom" id="VjQ-ql-FRB"/>
+                            <constraint firstItem="Qc7-aT-mTF" firstAttribute="leading" secondItem="4of-Zm-hm1" secondAttribute="leading" id="ZPC-QU-ilh"/>
+                            <constraint firstItem="k1T-o1-Zcp" firstAttribute="leading" secondItem="4of-Zm-hm1" secondAttribute="leading" constant="16" id="c8E-4B-EFM"/>
+                            <constraint firstItem="Gmn-yE-2DR" firstAttribute="top" secondItem="k1T-o1-Zcp" secondAttribute="bottom" constant="8" id="dQK-q2-mma"/>
+                            <constraint firstItem="S4a-UY-luE" firstAttribute="leading" secondItem="4of-Zm-hm1" secondAttribute="leading" id="fAi-56-MRF"/>
+                            <constraint firstAttribute="bottom" secondItem="Qc7-aT-mTF" secondAttribute="bottom" id="fUt-sv-tZi"/>
+                            <constraint firstItem="4of-Zm-hm1" firstAttribute="trailing" secondItem="k1T-o1-Zcp" secondAttribute="trailing" constant="16" id="gyi-UH-ve7"/>
+                            <constraint firstItem="k1T-o1-Zcp" firstAttribute="top" secondItem="Qc7-aT-mTF" secondAttribute="top" id="jYt-Op-Yvw"/>
+                            <constraint firstItem="S4a-UY-luE" firstAttribute="top" secondItem="4of-Zm-hm1" secondAttribute="top" id="jva-Zt-6ZQ"/>
+                            <constraint firstItem="S4a-UY-luE" firstAttribute="trailing" secondItem="4of-Zm-hm1" secondAttribute="trailing" id="mQ9-Ys-5SW"/>
+                            <constraint firstItem="AfN-In-eIV" firstAttribute="top" secondItem="4of-Zm-hm1" secondAttribute="top" id="oBX-lZ-hh2"/>
+                            <constraint firstAttribute="bottom" secondItem="AfN-In-eIV" secondAttribute="bottom" id="qEG-iw-UZ4"/>
+                            <constraint firstItem="7Bb-F6-bgz" firstAttribute="leading" secondItem="4of-Zm-hm1" secondAttribute="leading" id="uSB-a9-KAF"/>
+                            <constraint firstItem="YSf-ET-IJX" firstAttribute="trailing" secondItem="4of-Zm-hm1" secondAttribute="trailing" id="viq-SY-XKQ"/>
+                            <constraint firstItem="YSf-ET-IJX" firstAttribute="leading" secondItem="4of-Zm-hm1" secondAttribute="leading" id="w1V-SY-7wk"/>
+                            <constraint firstItem="7Bb-F6-bgz" firstAttribute="trailing" secondItem="4of-Zm-hm1" secondAttribute="trailing" id="x3D-jz-AIs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hUk-BL-uw7"/>
+                    <connections>
+                        <outlet property="lblMessage" destination="k1T-o1-Zcp" id="C0I-H3-rNc"/>
+                        <outlet property="mImageView" destination="4eN-YM-maG" id="rqQ-kN-t24"/>
+                        <outlet property="mainImageView" destination="YSf-ET-IJX" id="8lQ-kr-LBZ"/>
+                        <outlet property="tImageView" destination="7Bb-F6-bgz" id="tBA-XV-Fx7"/>
+                        <outlet property="tempImageView" destination="AfN-In-eIV" id="tNb-Nr-fKI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e6g-BW-A8t" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5706" y="1697"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mP9-Ip-mda">
+            <objects>
+                <navigationController storyboardIdentifier="TempViewController" automaticallyAdjustsScrollViewInsets="NO" id="3ci-8l-OjG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="j88-Wo-kan">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yAI-22-s3u" kind="relationship" relationship="rootViewController" id="nwI-2y-eBZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kqQ-JC-YQF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4832" y="1696"/>
+        </scene>
+        <!--Math View Controller1-->
+        <scene sceneID="4SO-yc-ZJQ">
+            <objects>
+                <viewController storyboardIdentifier="SpeakingCal" id="Jg7-RP-XJq" customClass="MathViewController1" customModule="JoackyWriter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AQC-eu-xq4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dyO-8a-k2T">
+                                <rect key="frame" x="0.0" y="44" width="414" height="248"/>
+                                <subviews>
+                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1234" textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="glA-EK-WM9">
+                                        <rect key="frame" x="8" y="8" width="398" height="164"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="60"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="80"/>
+                                        </variation>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Mm-5p-npd">
+                                        <rect key="frame" x="8" y="180" width="398" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Mxo-FB-JUY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="60"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="0Mm-5p-npd" firstAttribute="leading" secondItem="dyO-8a-k2T" secondAttribute="leadingMargin" id="XcN-Hp-tRW"/>
+                                    <constraint firstItem="glA-EK-WM9" firstAttribute="top" secondItem="dyO-8a-k2T" secondAttribute="topMargin" id="aFn-sC-FMU"/>
+                                    <constraint firstItem="0Mm-5p-npd" firstAttribute="top" secondItem="glA-EK-WM9" secondAttribute="bottom" constant="8" symbolic="YES" id="bLG-9J-HYF"/>
+                                    <constraint firstItem="0Mm-5p-npd" firstAttribute="trailing" secondItem="dyO-8a-k2T" secondAttribute="trailingMargin" id="d7N-H6-bY8"/>
+                                    <constraint firstItem="glA-EK-WM9" firstAttribute="trailing" secondItem="dyO-8a-k2T" secondAttribute="trailingMargin" id="fpf-mC-Xrz"/>
+                                    <constraint firstItem="0Mm-5p-npd" firstAttribute="bottom" secondItem="dyO-8a-k2T" secondAttribute="bottomMargin" id="ns6-5u-YHC"/>
+                                    <constraint firstItem="glA-EK-WM9" firstAttribute="leading" secondItem="dyO-8a-k2T" secondAttribute="leadingMargin" id="oWS-y4-VjV"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LPz-G3-5xj">
+                                <rect key="frame" x="0.0" y="300" width="414" height="562"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="psK-JW-Ifu">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="562"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mU9-S5-6Gi">
+                                                <rect key="frame" x="32" y="0.0" width="350" height="104.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2b-7h-ujJ" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="260" height="80"/>
+                                                        <color key="backgroundColor" red="0.65098039220000004" green="0.65098039220000004" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="80" id="wGC-Qe-fPN">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                            </constraint>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                                        <state key="normal" title="CLEAR">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="cornerRadius" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="60"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="deleteButtonPressed:" destination="Jg7-RP-XJq" eventType="touchUpInside" id="cGi-CB-Gdd"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuQ-m3-0gO" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
+                                                        <rect key="frame" x="270" y="0.0" width="80" height="80"/>
+                                                        <color key="backgroundColor" red="0.25195333669999997" green="0.59576464510000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="80" id="3gm-qK-zzi">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                            </constraint>
+                                                            <constraint firstAttribute="height" constant="80" id="SEc-Sc-CVg">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                            </constraint>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                                        <state key="normal" title="÷">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="cornerRadius" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="operationButtonPressed:" destination="Jg7-RP-XJq" eventType="touchUpInside" id="UgT-az-MC9"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <viewLayoutGuide key="safeArea" id="7Sd-x5-prV"/>
+                                                <constraints>
+                                                    <constraint firstItem="a2b-7h-ujJ" firstAttribute="leading" secondItem="7Sd-x5-prV" secondAttribute="leading" id="7xl-cl-fkw"/>
+                                                    <constraint firstItem="xuQ-m3-0gO" firstAttribute="trailing" secondItem="7Sd-x5-prV" secondAttribute="trailing" id="vbK-Te-do2"/>
+                                                </constraints>
+                                                <variation key="heightClass=regular-widthClass=regular" spacing="25"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IYn-Kz-ejR">
+                                                <rect key="frame" x="32" y="114.5" width="350" height="104.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TiB-xO-t3J" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="80" id="XfI-XK-bQK">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                            </constraint>
+                                                            <constraint firstAttribute="width" constant="80" id="cWb-B2-Bfh">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                            </constraint>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        <state key="normal" title="7">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="cornerRadius" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="numberOrDecimalButtonPressed:" destination="Jg7-RP-XJq" eventType="touchUpInside" id="hLf-uZ-N3b"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8B-ds-Dym" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
+                                                        <rect key="frame" x="90" y="0.0" width="80" height="80"/>
+                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="80" id="NXg-te-YW5">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                            </constraint>
+                                                            <constraint firstAttribute="width" constant="80" id="hBr-ka-d9i">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                            </constraint>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        <state key="normal" title="8">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="cornerRadius" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="numberOrDecimalButtonPressed:" destination="Jg7-RP-XJq" eventType="touchUpInside" id="78B-ZN-74L"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAk-vn-9o8" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
+                                                        <rect key="frame" x="180" y="0.0" width="80" height="80"/>
+                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="80" id="3g5-Hb-zaZ">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                            </constraint>
+                                                            <constraint firstAttribute="height" constant="80" id="kbA-5e-aCU">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                            </constraint>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        <state key="normal" title="9">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="cornerRadius" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="numberOrDecimalButtonPressed:" destination="Jg7-RP-XJq" eventType="touchUpInside" id="uzH-Bj-XCP"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejX-z3-yYx" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
+                                                        <rect key="frame" x="270" y="0.0" width="80" height="80"/>
+                                                        <color key="backgroundColor" red="0.25195333669999997" green="0.59576464510000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="80" id="INy-SU-3hB">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                            </constraint>
+                                                            <constraint firstAttribute="width" constant="80" id="u1H-ma-0qc">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                            </constraint>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                                        <state key="normal" title="×">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="cornerRadius" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="operationButtonPressed:" destination="Jg7-RP-XJq" eventType="touchUpInside" id="yKj-7h-s00"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <viewLayoutGuide key="safeArea" id="sGS-bq-eeg"/>
+                                                <variation key="heightClass=regular-widthClass=regular" spacing="25"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BS8-2R-1ap">
+                                                <rect key="frame" x="32" y="229" width="350" height="104"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XK4-on-xLG" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="80" id="Nkl-A4-pY6">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                            </constraint>
+                                                            <constraint firstAttribute="width" constant="80" id="YTi-Aq-nTr">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                            </constraint>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        <state key="normal" title="4">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="cornerRadius" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="numberOrDecimalButtonPressed:" destination="Jg7-RP-XJq" eventType="touchUpInside" id="FCp-7P-Scb"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hsx-6O-WwD" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
+                                                        <rect key="frame" x="90" y="0.0" width="80" height="80"/>
+                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="80" id="9OW-xA-zG7">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                            </constraint>
+                                                            <constraint firstAttribute="width" constant="80" id="OtW-l6-AHS">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                            </constraint>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        <state key="normal" title="5">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="cornerRadius" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="numberOrDecimalButtonPressed:" destination="Jg7-RP-XJq" eventType="touchUpInside" id="Waj-Ce-0Cz"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUY-4q-wuf" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
+                                                        <rect key="frame" x="180" y="0.0" width="80" height="80"/>
+                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="80" id="BtU-kM-0pt">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                            </constraint>
+                                                            <constraint firstAttribute="height" constant="80" id="JgF-xD-7pf">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                            </constraint>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        <state key="normal" title="6">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="cornerRadius" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="numberOrDecimalButtonPressed:" destination="Jg7-RP-XJq" eventType="touchUpInside" id="VYD-4X-DP2"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTM-hE-Q97" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
+                                                        <rect key="frame" x="270" y="0.0" width="80" height="80"/>
+                                                        <color key="backgroundColor" red="0.25195333669999997" green="0.59576464510000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="80" id="KQq-Ci-mGg">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                            </constraint>
+                                                            <constraint firstAttribute="height" constant="80" id="d2q-kA-xB0">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                            </constraint>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                                        <state key="normal" title="-">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="cornerRadius" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="operationButtonPressed:" destination="Jg7-RP-XJq" eventType="touchUpInside" id="au8-oJ-Kvp"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <variation key="heightClass=regular-widthClass=regular" spacing="25"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dX8-qV-G79">
+                                                <rect key="frame" x="32" y="343" width="350" height="104.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vn3-35-xeG" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="80" id="R2h-6t-R0d">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                            </constraint>
+                                                            <constraint firstAttribute="width" constant="80" id="dOi-C1-bcH">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                            </constraint>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        <state key="normal" title="1">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="cornerRadius" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="numberOrDecimalButtonPressed:" destination="Jg7-RP-XJq" eventType="touchUpInside" id="UTp-gU-WN6"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w32-DB-RIT" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
+                                                        <rect key="frame" x="90" y="0.0" width="80" height="80"/>
+                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="80" id="ecu-80-X4N">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                            </constraint>
+                                                            <constraint firstAttribute="width" constant="80" id="yVC-Gg-i1x">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                            </constraint>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        <state key="normal" title="2">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="cornerRadius" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="numberOrDecimalButtonPressed:" destination="Jg7-RP-XJq" eventType="touchUpInside" id="fNq-rz-ncj"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o82-Ih-gCS" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
+                                                        <rect key="frame" x="180" y="0.0" width="80" height="80"/>
+                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="80" id="Y3q-Dw-huM">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                            </constraint>
+                                                            <constraint firstAttribute="height" constant="80" id="gTk-DF-EKu">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                            </constraint>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        <state key="normal" title="3">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="cornerRadius" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="numberOrDecimalButtonPressed:" destination="Jg7-RP-XJq" eventType="touchUpInside" id="nPe-A9-4PX"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQj-TQ-T14" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
+                                                        <rect key="frame" x="270" y="0.0" width="80" height="80"/>
+                                                        <color key="backgroundColor" red="0.25195333669999997" green="0.59576464510000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="80" id="jvo-Bg-ZJw">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                            </constraint>
+                                                            <constraint firstAttribute="width" constant="80" id="upf-L1-vbk">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                            </constraint>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                                        <state key="normal" title="+">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="cornerRadius" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="operationButtonPressed:" destination="Jg7-RP-XJq" eventType="touchUpInside" id="Nuf-M6-lqf"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <viewLayoutGuide key="safeArea" id="3ch-7c-JGu"/>
+                                                <variation key="heightClass=regular-widthClass=regular" spacing="25"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Dcf-jh-Zph">
+                                                <rect key="frame" x="33" y="457.5" width="348" height="104.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOk-r5-ll4" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="168" height="80"/>
+                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="80" id="0Hd-Rn-u0v">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                            </constraint>
+                                                            <constraint firstAttribute="width" constant="168" id="D9Q-6k-dll">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="345"/>
+                                                            </constraint>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <state key="normal" title="0">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="cornerRadius" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="numberOrDecimalButtonPressed:" destination="Jg7-RP-XJq" eventType="touchUpInside" id="ueT-Xr-ZvX"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGU-RT-yNY" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
+                                                        <rect key="frame" x="178" y="0.0" width="80" height="80"/>
+                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="80" id="HCp-5P-fI8">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                            </constraint>
+                                                            <constraint firstAttribute="width" constant="80" id="zvQ-qa-0oA">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                            </constraint>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <state key="normal" title=".">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="cornerRadius" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="numberOrDecimalButtonPressed:" destination="Jg7-RP-XJq" eventType="touchUpInside" id="e8T-WJ-FvW"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ld-hW-YVm" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
+                                                        <rect key="frame" x="268" y="0.0" width="80" height="80"/>
+                                                        <color key="backgroundColor" red="0.25195333669999997" green="0.59576464510000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="80" id="1pv-2z-Zzi">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                            </constraint>
+                                                            <constraint firstAttribute="height" constant="80" id="c2m-3V-Wk1">
+                                                                <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                                            </constraint>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                                        <state key="normal" title="=">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="cornerRadius" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="operationButtonPressed:" destination="Jg7-RP-XJq" eventType="touchUpInside" id="yYz-25-9uk"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <viewLayoutGuide key="safeArea" id="uHJ-Qt-dtr"/>
+                                                <variation key="heightClass=regular-widthClass=regular" spacing="25"/>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="a2b-7h-ujJ" firstAttribute="trailing" secondItem="XAk-vn-9o8" secondAttribute="trailing" id="2Y4-Oi-NTE"/>
+                                            <constraint firstItem="a2b-7h-ujJ" firstAttribute="leading" secondItem="TiB-xO-t3J" secondAttribute="leading" id="F5N-Eq-6Cg"/>
+                                            <constraint firstItem="xuQ-m3-0gO" firstAttribute="trailing" secondItem="ejX-z3-yYx" secondAttribute="trailing" id="Rs8-Fu-rs0"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="psK-JW-Ifu" secondAttribute="trailing" id="3ky-Xb-3s4"/>
+                                    <constraint firstItem="psK-JW-Ifu" firstAttribute="top" secondItem="LPz-G3-5xj" secondAttribute="top" id="8wI-xd-aer"/>
+                                    <constraint firstItem="psK-JW-Ifu" firstAttribute="leading" secondItem="LPz-G3-5xj" secondAttribute="leading" id="JMN-ed-bma"/>
+                                    <constraint firstAttribute="bottom" secondItem="psK-JW-Ifu" secondAttribute="bottom" id="nIN-nB-qe1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nzz-1q-Y74"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dyO-8a-k2T" firstAttribute="top" secondItem="nzz-1q-Y74" secondAttribute="top" id="0jQ-EA-GU7"/>
+                            <constraint firstItem="LPz-G3-5xj" firstAttribute="top" secondItem="dyO-8a-k2T" secondAttribute="bottom" constant="8" symbolic="YES" id="6FZ-E1-4SO"/>
+                            <constraint firstItem="LPz-G3-5xj" firstAttribute="bottom" secondItem="AQC-eu-xq4" secondAttribute="bottomMargin" id="FMS-qW-dNs"/>
+                            <constraint firstItem="LPz-G3-5xj" firstAttribute="leading" secondItem="nzz-1q-Y74" secondAttribute="leading" id="FbN-Za-7My"/>
+                            <constraint firstItem="dyO-8a-k2T" firstAttribute="trailing" secondItem="nzz-1q-Y74" secondAttribute="trailing" id="G3d-2t-7Zh"/>
+                            <constraint firstAttribute="bottom" secondItem="dyO-8a-k2T" secondAttribute="bottom" multiplier="2" constant="20" symbolic="YES" id="IVl-uI-REo"/>
+                            <constraint firstItem="dyO-8a-k2T" firstAttribute="leading" secondItem="nzz-1q-Y74" secondAttribute="leading" id="bkD-UW-diA"/>
+                            <constraint firstAttribute="bottom" secondItem="dyO-8a-k2T" secondAttribute="bottom" multiplier="3" constant="20" symbolic="YES" id="jKi-7B-5rT"/>
+                            <constraint firstItem="LPz-G3-5xj" firstAttribute="trailing" secondItem="nzz-1q-Y74" secondAttribute="trailing" id="lEK-wi-U0f"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="IVl-uI-REo"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="IVl-uI-REo"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="IVl-uI-REo"/>
+                                <exclude reference="jKi-7B-5rT"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="currentTextField" destination="glA-EK-WM9" id="zwu-mj-9j1"/>
+                        <outlet property="deleteButton" destination="a2b-7h-ujJ" id="C8O-eO-En8"/>
+                        <outlet property="resultLabel" destination="0Mm-5p-npd" id="VZL-Vq-f1p"/>
+                        <outlet property="topView" destination="dyO-8a-k2T" id="g9v-CJ-H2d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uXc-3g-GNd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.98550724637681" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="3ld-hW-YVm">
+            <size key="intrinsicContentSize" width="30" height="65"/>
+        </designable>
+        <designable name="Hsx-6O-WwD">
+            <size key="intrinsicContentSize" width="30" height="48"/>
+        </designable>
+        <designable name="M8B-ds-Dym">
+            <size key="intrinsicContentSize" width="30" height="48"/>
+        </designable>
+        <designable name="TUY-4q-wuf">
+            <size key="intrinsicContentSize" width="30" height="48"/>
+        </designable>
+        <designable name="TiB-xO-t3J">
+            <size key="intrinsicContentSize" width="30" height="48"/>
+        </designable>
+        <designable name="XAk-vn-9o8">
+            <size key="intrinsicContentSize" width="30" height="48"/>
+        </designable>
+        <designable name="XK4-on-xLG">
+            <size key="intrinsicContentSize" width="30" height="48"/>
+        </designable>
+        <designable name="ZGU-RT-yNY">
+            <size key="intrinsicContentSize" width="30" height="54"/>
+        </designable>
+        <designable name="a2b-7h-ujJ">
+            <size key="intrinsicContentSize" width="94" height="53"/>
+        </designable>
+        <designable name="dQj-TQ-T14">
+            <size key="intrinsicContentSize" width="30" height="65"/>
+        </designable>
+        <designable name="ejX-z3-yYx">
+            <size key="intrinsicContentSize" width="30" height="65"/>
+        </designable>
+        <designable name="fOk-r5-ll4">
+            <size key="intrinsicContentSize" width="30" height="54"/>
+        </designable>
+        <designable name="o82-Ih-gCS">
+            <size key="intrinsicContentSize" width="30" height="48"/>
+        </designable>
+        <designable name="sTM-hE-Q97">
+            <size key="intrinsicContentSize" width="30" height="65"/>
+        </designable>
+        <designable name="vn3-35-xeG">
+            <size key="intrinsicContentSize" width="30" height="48"/>
+        </designable>
+        <designable name="w32-DB-RIT">
+            <size key="intrinsicContentSize" width="30" height="48"/>
+        </designable>
+        <designable name="xuQ-m3-0gO">
+            <size key="intrinsicContentSize" width="30" height="65"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="amplifier" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="clear" width="170.66667175292969" height="170.66667175292969"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
