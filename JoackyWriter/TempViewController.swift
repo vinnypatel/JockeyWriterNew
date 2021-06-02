@@ -121,7 +121,7 @@ class TempViewController: UIViewController {
     
         swiped = false
         lastPoint = touch.location(in: view)
-    debugPrint("last point : \(lastPoint)")
+   // debugPrint("last point : \(lastPoint)")
     if lastPoint.y + self.topbarHeight > lblMessage.frame.origin.y {
           return
         }
@@ -161,7 +161,7 @@ class TempViewController: UIViewController {
     let touch = touches.first
     
 //    lastPoint = touch!.location(in: view)
-    debugPrint("last point : \(lastPoint)")
+   // debugPrint("last point : \(lastPoint)")
     if touch!.location(in: view).y > lblMessage.frame.origin.y {
       return
     }
@@ -181,7 +181,7 @@ class TempViewController: UIViewController {
   /** Handle end of stroke: Draw the line segment, and pass along to the `StrokeManager`. */
   override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
     
-    debugPrint("last point : \(lastPoint)")
+   // debugPrint("last point : \(lastPoint)")
     if lastPoint.y > lblMessage.frame.origin.y {
       return
     }
@@ -285,7 +285,7 @@ extension TempViewController: StrokeManagerDelegate {
   func displayMessage(message: String) {
     
     lblMessage.text = message
-    debugPrint("Display message: \(message)")
+   // debugPrint("Display message: \(message)")
     
     if message.isEmpty {// || message == "Model is already downloaded" {
         return
@@ -297,7 +297,7 @@ extension TempViewController: StrokeManagerDelegate {
                 //Line 3. Specify the speech utterance rate. 1 = speaking extremely the higher the values the slower speech patterns. The default rate, AVSpeechUtteranceDefaultSpeechRate is 0.5
                 speechUtterance.rate = AVSpeechUtteranceMaximumSpeechRate / 3.0
                 // Line 4. Specify the voice. It is explicitly set to English here, but it will use the device default if not specified.
-                speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US")
+                speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
                 // Line 5. Pass in the urrerance to the synthesizer to actually speak.
                // speechSynthesizer.speak(speechUtterance)
    // utterance.rate = AVSpeechUtteranceMaximumSpeechRate / 2.0
@@ -313,7 +313,9 @@ extension TempViewController: StrokeManagerDelegate {
       in: CGRect(
         x: 0, y: 0, width: (secondImg ? mImageView : mainImageView).frame.size.width, height: (secondImg ? mImageView : mainImageView).frame.size.height))
     let ctx: CGContext! = UIGraphicsGetCurrentContext()
+    
     for stroke in ink.strokes {
+        
       if stroke.points.isEmpty {
         continue
       }
@@ -324,6 +326,7 @@ extension TempViewController: StrokeManagerDelegate {
         ctx.addLine(to: CGPoint.init(x: Double(point.x), y: Double(point.y)))
       }
     }
+    
     ctx.setLineCap(CGLineCap.round)
     ctx.setLineWidth(10.0)
     // Recognized strokes are drawn in gray.

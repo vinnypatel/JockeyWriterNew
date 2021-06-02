@@ -20,19 +20,21 @@ extension Double {
 
 extension String {
     func convertFromDoubleToCleanString() -> String? {
-        
+       // debugPrint("- Function convertFromDoubleToCleanString() \(self)")
         if self.last == "." {
             return self
         }
         
         if let double = Double(self) {
-            let isInteger = floor(double) == double
             
+            let isInteger = floor(double) == double
             
             if isInteger {
                 return "\(Int(double))"
             }
+            
             return double.truncate(places: 4).clean
+            
         } else {
             return nil
         }

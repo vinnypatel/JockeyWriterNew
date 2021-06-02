@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eba-rw-Gpi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eba-rw-Gpi">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -1259,7 +1259,7 @@
                             <tableViewSection id="cgL-v2-n6c">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="100" id="XZQ-Mt-Sb9">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="100"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XZQ-Mt-Sb9" id="GzR-VG-0ke">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
@@ -1371,7 +1371,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="200" id="M1m-oE-5pU">
-                                        <rect key="frame" x="0.0" y="124.5" width="414" height="200"/>
+                                        <rect key="frame" x="0.0" y="128" width="414" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="M1m-oE-5pU" id="krD-fL-ss0">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
@@ -2097,10 +2097,10 @@
                                 <rect key="frame" x="15" y="115" width="384" height="100"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l2I-nn-YS4">
-                                        <rect key="frame" x="0.0" y="0.0" width="238" height="100"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="278" height="100"/>
                                         <subviews>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="jump" textAlignment="center" lineBreakMode="wordWrap" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="jwQ-uK-v6b" customClass="EdgeInsetLabel" customModule="JoackyWriter" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="238" height="100"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="278" height="100"/>
                                                 <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <accessibility key="accessibilityConfiguration" identifier="morphingLabel" label="morphingLabel"/>
                                                 <fontDescription key="fontDescription" name="RockoFLF" family="RockoFLF" pointSize="107"/>
@@ -4115,7 +4115,7 @@
     </scenes>
     <designables>
         <designable name="jwQ-uK-v6b">
-            <size key="intrinsicContentSize" width="238" height="125"/>
+            <size key="intrinsicContentSize" width="278" height="125"/>
         </designable>
         <designable name="pWx-NF-dbW">
             <size key="intrinsicContentSize" width="394" height="44"/>

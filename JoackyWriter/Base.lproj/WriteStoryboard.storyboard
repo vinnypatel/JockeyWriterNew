@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -43,7 +42,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="4xw-T3-DRz" firstAttribute="leading" secondItem="SLY-4N-JXg" secondAttribute="leading" id="9N8-tb-Tfb"/>
                                             <constraint firstAttribute="bottom" secondItem="4xw-T3-DRz" secondAttribute="bottom" id="fee-ov-LTO"/>
@@ -52,7 +51,7 @@
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gmw-5i-928">
                                         <rect key="frame" x="0.0" y="200" width="414" height="200"/>
-                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -70,7 +69,7 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qc7-aT-mTF">
                                 <rect key="frame" x="0.0" y="488" width="414" height="408"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1T-o1-Zcp">
                                 <rect key="frame" x="16" y="488" width="382" height="298"/>
@@ -106,7 +105,6 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="4of-Zm-hm1"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="4eN-YM-maG" firstAttribute="leading" secondItem="7Bb-F6-bgz" secondAttribute="leading" id="03R-Nf-714"/>
@@ -140,6 +138,7 @@
                             <constraint firstItem="YSf-ET-IJX" firstAttribute="leading" secondItem="4of-Zm-hm1" secondAttribute="leading" id="w1V-SY-7wk"/>
                             <constraint firstItem="7Bb-F6-bgz" firstAttribute="trailing" secondItem="4of-Zm-hm1" secondAttribute="trailing" id="x3D-jz-AIs"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="4of-Zm-hm1"/>
                     </view>
                     <navigationItem key="navigationItem" id="hUk-BL-uw7"/>
                     <connections>
@@ -185,6 +184,7 @@
                                 <subviews>
                                     <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1234" textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="glA-EK-WM9">
                                         <rect key="frame" x="8" y="8" width="398" height="164"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="60"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <variation key="heightClass=regular-widthClass=regular">
@@ -197,7 +197,7 @@
                                             <constraint firstAttribute="height" constant="60" id="Mxo-FB-JUY"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="40"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=regular-widthClass=regular">
                                             <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="60"/>
@@ -224,9 +224,9 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mU9-S5-6Gi">
                                                 <rect key="frame" x="32" y="0.0" width="350" height="104.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2b-7h-ujJ" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2b-7h-ujJ" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="260" height="80"/>
-                                                        <color key="backgroundColor" red="0.65098039220000004" green="0.65098039220000004" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.64706331490000002" green="0.64705079789999997" blue="0.6470593214" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="80" id="wGC-Qe-fPN">
                                                                 <variation key="heightClass=regular-widthClass=regular" constant="160"/>
@@ -246,9 +246,9 @@
                                                             <action selector="deleteButtonPressed:" destination="Jg7-RP-XJq" eventType="touchUpInside" id="cGi-CB-Gdd"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuQ-m3-0gO" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuQ-m3-0gO" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
                                                         <rect key="frame" x="270" y="0.0" width="80" height="80"/>
-                                                        <color key="backgroundColor" red="0.25195333669999997" green="0.59576464510000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="backgroundColor" red="0.94498085980000002" green="0.63893526789999999" blue="0.23497277499999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="3gm-qK-zzi">
                                                                 <variation key="heightClass=regular-widthClass=regular" constant="160"/>
@@ -272,19 +272,19 @@
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <viewLayoutGuide key="safeArea" id="7Sd-x5-prV"/>
                                                 <constraints>
                                                     <constraint firstItem="a2b-7h-ujJ" firstAttribute="leading" secondItem="7Sd-x5-prV" secondAttribute="leading" id="7xl-cl-fkw"/>
                                                     <constraint firstItem="xuQ-m3-0gO" firstAttribute="trailing" secondItem="7Sd-x5-prV" secondAttribute="trailing" id="vbK-Te-do2"/>
                                                 </constraints>
+                                                <viewLayoutGuide key="safeArea" id="7Sd-x5-prV"/>
                                                 <variation key="heightClass=regular-widthClass=regular" spacing="25"/>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IYn-Kz-ejR">
                                                 <rect key="frame" x="32" y="114.5" width="350" height="104.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TiB-xO-t3J" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
+                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TiB-xO-t3J" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
-                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.20000159740000001" green="0.19999706749999999" blue="0.2000001669" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="80" id="XfI-XK-bQK">
                                                                 <variation key="heightClass=regular-widthClass=regular" constant="160"/>
@@ -307,9 +307,9 @@
                                                             <action selector="numberOrDecimalButtonPressed:" destination="Jg7-RP-XJq" eventType="touchUpInside" id="hLf-uZ-N3b"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8B-ds-Dym" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
+                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8B-ds-Dym" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
                                                         <rect key="frame" x="90" y="0.0" width="80" height="80"/>
-                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.20000159740000001" green="0.19999706749999999" blue="0.2000001669" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="80" id="NXg-te-YW5">
                                                                 <variation key="heightClass=regular-widthClass=regular" constant="160"/>
@@ -332,9 +332,9 @@
                                                             <action selector="numberOrDecimalButtonPressed:" destination="Jg7-RP-XJq" eventType="touchUpInside" id="78B-ZN-74L"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAk-vn-9o8" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
+                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAk-vn-9o8" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
                                                         <rect key="frame" x="180" y="0.0" width="80" height="80"/>
-                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.20000159740000001" green="0.19999706749999999" blue="0.2000001669" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="3g5-Hb-zaZ">
                                                                 <variation key="heightClass=regular-widthClass=regular" constant="160"/>
@@ -357,9 +357,9 @@
                                                             <action selector="numberOrDecimalButtonPressed:" destination="Jg7-RP-XJq" eventType="touchUpInside" id="uzH-Bj-XCP"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejX-z3-yYx" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejX-z3-yYx" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
                                                         <rect key="frame" x="270" y="0.0" width="80" height="80"/>
-                                                        <color key="backgroundColor" red="0.25195333669999997" green="0.59576464510000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="backgroundColor" red="0.94498085980000002" green="0.63893526789999999" blue="0.23497277499999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="80" id="INy-SU-3hB">
                                                                 <variation key="heightClass=regular-widthClass=regular" constant="160"/>
@@ -389,9 +389,9 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BS8-2R-1ap">
                                                 <rect key="frame" x="32" y="229" width="350" height="104"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XK4-on-xLG" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XK4-on-xLG" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
-                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.20000159740000001" green="0.19999706749999999" blue="0.2000001669" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="80" id="Nkl-A4-pY6">
                                                                 <variation key="heightClass=regular-widthClass=regular" constant="160"/>
@@ -414,9 +414,9 @@
                                                             <action selector="numberOrDecimalButtonPressed:" destination="Jg7-RP-XJq" eventType="touchUpInside" id="FCp-7P-Scb"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hsx-6O-WwD" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hsx-6O-WwD" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
                                                         <rect key="frame" x="90" y="0.0" width="80" height="80"/>
-                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.20000159740000001" green="0.19999706749999999" blue="0.2000001669" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="80" id="9OW-xA-zG7">
                                                                 <variation key="heightClass=regular-widthClass=regular" constant="160"/>
@@ -439,9 +439,9 @@
                                                             <action selector="numberOrDecimalButtonPressed:" destination="Jg7-RP-XJq" eventType="touchUpInside" id="Waj-Ce-0Cz"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUY-4q-wuf" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
+                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUY-4q-wuf" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
                                                         <rect key="frame" x="180" y="0.0" width="80" height="80"/>
-                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.20000159740000001" green="0.19999706749999999" blue="0.2000001669" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="BtU-kM-0pt">
                                                                 <variation key="heightClass=regular-widthClass=regular" constant="160"/>
@@ -464,9 +464,9 @@
                                                             <action selector="numberOrDecimalButtonPressed:" destination="Jg7-RP-XJq" eventType="touchUpInside" id="VYD-4X-DP2"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTM-hE-Q97" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTM-hE-Q97" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
                                                         <rect key="frame" x="270" y="0.0" width="80" height="80"/>
-                                                        <color key="backgroundColor" red="0.25195333669999997" green="0.59576464510000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="backgroundColor" red="0.94498085980000002" green="0.63893526789999999" blue="0.23497277499999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="KQq-Ci-mGg">
                                                                 <variation key="heightClass=regular-widthClass=regular" constant="160"/>
@@ -495,9 +495,9 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dX8-qV-G79">
                                                 <rect key="frame" x="32" y="343" width="350" height="104.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vn3-35-xeG" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vn3-35-xeG" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
-                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.20000159740000001" green="0.19999706749999999" blue="0.2000001669" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="80" id="R2h-6t-R0d">
                                                                 <variation key="heightClass=regular-widthClass=regular" constant="160"/>
@@ -520,9 +520,9 @@
                                                             <action selector="numberOrDecimalButtonPressed:" destination="Jg7-RP-XJq" eventType="touchUpInside" id="UTp-gU-WN6"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w32-DB-RIT" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w32-DB-RIT" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
                                                         <rect key="frame" x="90" y="0.0" width="80" height="80"/>
-                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.20000159740000001" green="0.19999706749999999" blue="0.2000001669" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="80" id="ecu-80-X4N">
                                                                 <variation key="heightClass=regular-widthClass=regular" constant="160"/>
@@ -545,9 +545,9 @@
                                                             <action selector="numberOrDecimalButtonPressed:" destination="Jg7-RP-XJq" eventType="touchUpInside" id="fNq-rz-ncj"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o82-Ih-gCS" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o82-Ih-gCS" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
                                                         <rect key="frame" x="180" y="0.0" width="80" height="80"/>
-                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.20000159740000001" green="0.19999706749999999" blue="0.2000001669" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="Y3q-Dw-huM">
                                                                 <variation key="heightClass=regular-widthClass=regular" constant="160"/>
@@ -570,9 +570,9 @@
                                                             <action selector="numberOrDecimalButtonPressed:" destination="Jg7-RP-XJq" eventType="touchUpInside" id="nPe-A9-4PX"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQj-TQ-T14" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQj-TQ-T14" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
                                                         <rect key="frame" x="270" y="0.0" width="80" height="80"/>
-                                                        <color key="backgroundColor" red="0.25195333669999997" green="0.59576464510000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="backgroundColor" red="0.94498085980000002" green="0.63893526789999999" blue="0.23497277499999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="80" id="jvo-Bg-ZJw">
                                                                 <variation key="heightClass=regular-widthClass=regular" constant="160"/>
@@ -602,9 +602,9 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Dcf-jh-Zph">
                                                 <rect key="frame" x="33" y="457.5" width="348" height="104.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOk-r5-ll4" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOk-r5-ll4" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="168" height="80"/>
-                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.20000159740000001" green="0.19999706749999999" blue="0.2000001669" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="80" id="0Hd-Rn-u0v">
                                                                 <variation key="heightClass=regular-widthClass=regular" constant="160"/>
@@ -627,9 +627,9 @@
                                                             <action selector="numberOrDecimalButtonPressed:" destination="Jg7-RP-XJq" eventType="touchUpInside" id="ueT-Xr-ZvX"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGU-RT-yNY" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
+                                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGU-RT-yNY" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
                                                         <rect key="frame" x="178" y="0.0" width="80" height="80"/>
-                                                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.20000159740000001" green="0.19999706749999999" blue="0.2000001669" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="80" id="HCp-5P-fI8">
                                                                 <variation key="heightClass=regular-widthClass=regular" constant="160"/>
@@ -652,9 +652,9 @@
                                                             <action selector="numberOrDecimalButtonPressed:" destination="Jg7-RP-XJq" eventType="touchUpInside" id="e8T-WJ-FvW"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ld-hW-YVm" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ld-hW-YVm" customClass="RoundButton" customModule="JoackyWriter" customModuleProvider="target">
                                                         <rect key="frame" x="268" y="0.0" width="80" height="80"/>
-                                                        <color key="backgroundColor" red="0.25195333669999997" green="0.59576464510000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="backgroundColor" red="0.94498085980000002" green="0.63893526789999999" blue="0.23497277499999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="1pv-2z-Zzi">
                                                                 <variation key="heightClass=regular-widthClass=regular" constant="160"/>
@@ -698,8 +698,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="nzz-1q-Y74"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="dyO-8a-k2T" firstAttribute="top" secondItem="nzz-1q-Y74" secondAttribute="top" id="0jQ-EA-GU7"/>
                             <constraint firstItem="LPz-G3-5xj" firstAttribute="top" secondItem="dyO-8a-k2T" secondAttribute="bottom" constant="8" symbolic="YES" id="6FZ-E1-4SO"/>
@@ -711,6 +710,7 @@
                             <constraint firstAttribute="bottom" secondItem="dyO-8a-k2T" secondAttribute="bottom" multiplier="3" constant="20" symbolic="YES" id="jKi-7B-5rT"/>
                             <constraint firstItem="LPz-G3-5xj" firstAttribute="trailing" secondItem="nzz-1q-Y74" secondAttribute="trailing" id="lEK-wi-U0f"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="nzz-1q-Y74"/>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="IVl-uI-REo"/>
@@ -740,70 +740,8 @@
             <point key="canvasLocation" x="128.98550724637681" y="137.94642857142856"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="3ld-hW-YVm">
-            <size key="intrinsicContentSize" width="30" height="65"/>
-        </designable>
-        <designable name="Hsx-6O-WwD">
-            <size key="intrinsicContentSize" width="30" height="48"/>
-        </designable>
-        <designable name="M8B-ds-Dym">
-            <size key="intrinsicContentSize" width="30" height="48"/>
-        </designable>
-        <designable name="TUY-4q-wuf">
-            <size key="intrinsicContentSize" width="30" height="48"/>
-        </designable>
-        <designable name="TiB-xO-t3J">
-            <size key="intrinsicContentSize" width="30" height="48"/>
-        </designable>
-        <designable name="XAk-vn-9o8">
-            <size key="intrinsicContentSize" width="30" height="48"/>
-        </designable>
-        <designable name="XK4-on-xLG">
-            <size key="intrinsicContentSize" width="30" height="48"/>
-        </designable>
-        <designable name="ZGU-RT-yNY">
-            <size key="intrinsicContentSize" width="30" height="54"/>
-        </designable>
-        <designable name="a2b-7h-ujJ">
-            <size key="intrinsicContentSize" width="94" height="53"/>
-        </designable>
-        <designable name="dQj-TQ-T14">
-            <size key="intrinsicContentSize" width="30" height="65"/>
-        </designable>
-        <designable name="ejX-z3-yYx">
-            <size key="intrinsicContentSize" width="30" height="65"/>
-        </designable>
-        <designable name="fOk-r5-ll4">
-            <size key="intrinsicContentSize" width="30" height="54"/>
-        </designable>
-        <designable name="o82-Ih-gCS">
-            <size key="intrinsicContentSize" width="30" height="48"/>
-        </designable>
-        <designable name="sTM-hE-Q97">
-            <size key="intrinsicContentSize" width="30" height="65"/>
-        </designable>
-        <designable name="vn3-35-xeG">
-            <size key="intrinsicContentSize" width="30" height="48"/>
-        </designable>
-        <designable name="w32-DB-RIT">
-            <size key="intrinsicContentSize" width="30" height="48"/>
-        </designable>
-        <designable name="xuQ-m3-0gO">
-            <size key="intrinsicContentSize" width="30" height="65"/>
-        </designable>
-    </designables>
     <resources>
         <image name="amplifier" width="170.66667175292969" height="170.66667175292969"/>
         <image name="clear" width="170.66667175292969" height="170.66667175292969"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray6Color">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGrayColor">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
     </resources>
 </document>

@@ -116,7 +116,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AVSpeechSynthesizerDelega
     
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
         
-        debugPrint("Finish...")
+       // debugPrint("Finish...")
         AppDelegate.isFinish = true
         APPDELEGATE.window?.isUserInteractionEnabled = true
         

@@ -17,8 +17,8 @@ enum WorkingOn {
 enum Operation: String {
     case add = "+"
     case subtract = "-"
-    case multiply = "x"
-    case divide = "/"
+    case multiply = "*"
+    case divide = "%"
     case equals = "="
     case noting = ""
 }
@@ -137,10 +137,11 @@ class Calculator {
     
     func appendOperation(_ operation: Operation) {
         
-        debugPrint("\(operation)")
+       // debugPrint("\(operation)")
         if operation != .equals {
             
             var speechValue = ""
+            
             switch operation {
             case .add:
                 speechValue = "plus"
@@ -161,7 +162,7 @@ class Calculator {
             let utterance = AVSpeechUtterance(string: speechValue)
             
             
-            utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
+            utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
             utterance.rate = 0.4
             
 //            let synthesizer = AVSpeechSynthesizer()
@@ -227,13 +228,15 @@ class Calculator {
     
     func updateNumberCurrentlyBeingWorkedOn() {
         
-        
-        
+//        let lessPrecisePI = Float(self.current)
+//        
+//        debugPrint(lessPrecisePI)
+//        
         guard let newNumber = Double(self.current) else {
             return
         }
         
-        debugPrint("\(newNumber)")
+       // debugPrint("\(newNumber)")
         self.newNumber = newNumber
         
         if count == 0 && timer == nil && AppDelegate.isFinish {
@@ -253,7 +256,7 @@ class Calculator {
                         let isInt = floor(newNumber) == newNumber
                         var utterance = AVSpeechUtterance()
                         
-                        debugPrint(self.newNumber)
+                       // debugPrint(self.newNumber)
                         if isInt {
                             
                             utterance = AVSpeechUtterance(string: "\(Int(self.newNumber!))")
@@ -263,13 +266,13 @@ class Calculator {
                             utterance = AVSpeechUtterance(string: "\(self.newNumber!)")
                         }
                         
-                        utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
+                        utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
                         utterance.rate = 0.5
                         AppDelegate.isFinish = false
                         AppDelegate.speechSynthesizer = AVSpeechSynthesizer()
                         AppDelegate.speechSynthesizer.speak(utterance)
                         AppDelegate.speechSynthesizer.delegate = APPDELEGATE
-                        debugPrint("Hello \(newNumber)")
+                       // debugPrint("Hello \(newNumber)")
                         
                   //  }
                     
