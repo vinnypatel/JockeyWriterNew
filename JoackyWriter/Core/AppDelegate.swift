@@ -34,7 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AVSpeechSynthesizerDelega
         MKProgress.config.hudType = .radial
        // MKProgress.config.hudColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         MKProgress.config.circleBorderColor = #colorLiteral(red: 0, green: 0.3764705882, blue: 0.5960784314, alpha: 1)
-        MKProgress.config.logoImage = #imageLiteral(resourceName: "Logo")
+        MKProgress.config.logoImage = #imageLiteral(resourceName: "ic_logo")
 
         Sounds.default.prepare()
         return true

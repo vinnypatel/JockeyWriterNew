@@ -87,7 +87,7 @@ class Calculator {
     //                                                         utterance = AVSpeechUtterance(string: "\(newNumber)")
     //                                                     }
     //
-    //                                                     utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
+    //                                                     utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
     //                                                     utterance.rate = 0.5
     //
     //                                                     let synthesizer = AVSpeechSynthesizer()
@@ -162,7 +162,7 @@ class Calculator {
             let utterance = AVSpeechUtterance(string: speechValue)
             
             
-            utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
+            utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
             utterance.rate = 0.4
             
 //            let synthesizer = AVSpeechSynthesizer()
@@ -266,7 +266,7 @@ class Calculator {
                             utterance = AVSpeechUtterance(string: "\(self.newNumber!)")
                         }
                         
-                        utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
+                        utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
                         utterance.rate = 0.5
                         AppDelegate.isFinish = false
                         AppDelegate.speechSynthesizer = AVSpeechSynthesizer()
@@ -292,7 +292,7 @@ class Calculator {
         //                utterance = AVSpeechUtterance(string: "\(newNumber)")
         //            }
         //
-        //            utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
+        //            utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
         //            utterance.rate = 0.5
         //
         //            let synthesizer = AVSpeechSynthesizer()

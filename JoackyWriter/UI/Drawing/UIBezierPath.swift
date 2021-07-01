@@ -14,10 +14,10 @@ extension UIBezierPath {
         var path = UIBezierPath()
         var font = CTFontCreateWithName(("RockoFLF" as CFString?)!, Utils.letterFontSize, nil)
         if letter == "a" {
-            font = CTFontCreateWithName(("PrimerPrint-Bold" as CFString?)!, Utils.letterFontSize * 1.4, nil)
+            font = CTFontCreateWithName(("ComicSansMS" as CFString?)!, Utils.letterFontSize * 1.2, nil)
         }
         else if letter == "I" {
-            font = CTFontCreateWithName(("PrimerPrint-Bold" as CFString?)!, Utils.letterFontSize * 1.16, nil)
+            font = CTFontCreateWithName(("primer" as CFString?)!, Utils.letterFontSize * 1.16, nil)
         }
         var unichars = [UniChar]("\(letter)".utf16)
         var glyphs = [CGGlyph](repeating: 0, count: unichars.count)

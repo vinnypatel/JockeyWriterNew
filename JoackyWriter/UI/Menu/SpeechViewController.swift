@@ -105,7 +105,7 @@ class SpeechViewController: UIViewController, AVSpeechSynthesizerDelegate {
             //Line 3. Specify the speech utterance rate. 1 = speaking extremely the higher the values the slower speech patterns. The default rate, AVSpeechUtteranceDefaultSpeechRate is 0.5
             speechUtterance.rate = AVSpeechUtteranceMaximumSpeechRate / 3.0
             // Line 4. Specify the voice. It is explicitly set to English here, but it will use the device default if not specified.
-            speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
+            speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US")
             // Line 5. Pass in the urrerance to the synthesizer to actually speak.
             AppDelegate.speechSynthesizer.speak(speechUtterance)
             
@@ -117,7 +117,7 @@ class SpeechViewController: UIViewController, AVSpeechSynthesizerDelegate {
         //Line 3. Specify the speech utterance rate. 1 = speaking extremely the higher the values the slower speech patterns. The default rate, AVSpeechUtteranceDefaultSpeechRate is 0.5
         speechUtterance.rate = AVSpeechUtteranceMaximumSpeechRate / 2.0
         // Line 4. Specify the voice. It is explicitly set to English here, but it will use the device default if not specified.
-        speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
+        speechUtterance.voice = AVSpeechSynthesisVoice(language: "en-US")
         // Line 5. Pass in the urrerance to the synthesizer to actually speak.
         AppDelegate.speechSynthesizer.speak(speechUtterance)
         

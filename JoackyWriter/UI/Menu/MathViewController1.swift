@@ -20,7 +20,7 @@ class MathViewController1: UIViewController {
     var arrRange = [NSRange]()
     
     var timer: Timer!
-    var count = 0
+  //  var count = 0
     var index = 0
     
     var calculator: Calculator!
@@ -28,11 +28,10 @@ class MathViewController1: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Sample Math"
+        self.title = "Simple Math"
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         //        self.navigationController?.navigationBar.barTintColor = .black
-        navigationController?.navigationBar.barTintColor = .black
-        navigationController?.navigationBar.tintColor = .white
+        
         calculator = Calculator()
         reset()
         
@@ -50,11 +49,17 @@ class MathViewController1: UIViewController {
         updateCurrent()
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        
-        self.navigationController?.navigationBar.barTintColor = .white
-        navigationController?.navigationBar.tintColor = .black
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.barTintColor = .black
+        navigationController?.navigationBar.tintColor = .white
     }
+    
+//    override func viewWillDisappear(_ animated: Bool) {
+//
+//        self.navigationController?.navigationBar.barTintColor = .white
+//        self.navigationController?.navigationBar.tintColor = .black
+//    }
     
     @IBAction func operationButtonPressed (_ sender: UIButton) {
         
@@ -121,48 +126,53 @@ class MathViewController1: UIViewController {
                     resultLabel.attributedText = NSAttributedString(string: text) //resultLabel.text! + " = " + calculator.getTextForPlaceholder()
                 }
                 
-                speechValue = resultLabel.attributedText?.string
-                
-                strSpeechValue = speechValue!
-                
-                
-                
-                let char = speechValue?.stripped
-                
-                
-                
-                
-                speechValue = speechValue?.replacingOccurrences(of: char!, with: " \(char ?? "") ")
-                
-                let arr = speechValue?.split(separator: " ")
-                
-                debugPrint("array \(arr!)")
-                var tempStr = strSpeechValue
-                arr?.forEach{ value in
-                    
-                    if let range = tempStr.range(of: value) {
-                        tempStr = tempStr.replacingOccurrences(of: value, with: replaceCharacterwith(str: String(value), count: value.count), options: .caseInsensitive, range: range)
-                        arrRange.append(NSRange(range, in: strSpeechValue))
-
-                    }
-                }
-                
-                debugPrint("Range \(arrRange)")
             
                 
-                if char == "+" {
-                    speechValue = speechValue!.replacingOccurrences(of: "+", with: " plus ")
-                }
-               else  if char == "-" {
-                    speechValue = speechValue!.replacingOccurrences(of: "-", with: " minus ")
-                }
-               else if char == "*" {
-                    speechValue = speechValue!.replacingOccurrences(of: "*", with: " multiply ")
-                }
-               else if char == "%" {
-                    speechValue = speechValue!.replacingOccurrences(of: "%", with: " divide ")
-                }
-                
+                // speechValue = resultLabel.attributedText?.string
+//
+//                strSpeechValue = speechValue!
+//
+//
+//
+//                var char = speechValue?.stripped
+//
+//                if char!.length > 1 {
+//
+//                    char = String(char!.prefix(1))
+//
+//                }
+//                //speechValue = speechValue?.stringByReplacingFirstOccurrenceOfString(target: char!, withString: " \(char ?? "") ")
+//                speechValue = speechValue?.replacingOccurrences(of: char!, with: " \(char ?? "") ")
+//
+//                let arr = speechValue?.split(separator: " ")
+//
+//                debugPrint("array \(arr!)")
+//                var tempStr = strSpeechValue
+//                arr?.forEach{ value in
+//
+//                    if let range = tempStr.range(of: value) {
+//                        tempStr = tempStr.replacingOccurrences(of: value, with: replaceCharacterwith(str: String(value), count: value.count), options: .caseInsensitive, range: range)
+//                        arrRange.append(NSRange(range, in: strSpeechValue))
+//
+//                    }
+//                }
+//
+//                debugPrint("Range \(arrRange)")
+//
+//
+//                if char == "+" {
+//                    speechValue = speechValue!.replacingOccurrences(of: "+", with: " plus ")
+//                }
+//               else  if char == "-" {
+//                    speechValue = speechValue!.replacingOccurrences(of: "-", with: " minus ")
+//                }
+//               else if char == "*" {
+//                    speechValue = speechValue!.replacingOccurrences(of: "*", with: " multiply ")
+//                }
+//               else if char == "%" {
+//                    speechValue = speechValue!.replacingOccurrences(of: "%", with: " divide ")
+//                }
+//
                 
                 //
                 //
@@ -207,50 +217,56 @@ class MathViewController1: UIViewController {
                 
                 //  return
                 //
-            } else {
-                
-                speechValue = resultLabel.attributedText?.string
-                
-                strSpeechValue = speechValue!
-                
-                
-                
-                let char = speechValue?.stripped
-                
-                
-                
-                
-                speechValue = speechValue?.replacingOccurrences(of: char!, with: " \(char ?? "") ")
-                
-                let arr = speechValue?.split(separator: " ")
-                
-                debugPrint("array \(arr!)")
-                var tempStr = strSpeechValue
-                arr?.forEach{ value in
-                    
-                    if let range = tempStr.range(of: value) {
-                        tempStr = tempStr.replacingOccurrences(of: value, with: replaceCharacterwith(str: String(value), count: value.count), options: .caseInsensitive, range: range)
-                        arrRange.append(NSRange(range, in: strSpeechValue))
-
-                    }
-                }
-                
-                debugPrint("Range \(arrRange)")
+            }
             
+            speechValue = resultLabel.attributedText?.string
+            
+            strSpeechValue = speechValue!
+            
+            
+            var char = speechValue?.stripped
+            
+            if char!.length > 1 {
                 
-                if char == "+" {
-                    speechValue = speechValue!.replacingOccurrences(of: "+", with: " plus ")
-                }
-               else  if char == "-" {
-                    speechValue = speechValue!.replacingOccurrences(of: "-", with: " minus ")
-                }
-               else if char == "*" {
-                    speechValue = speechValue!.replacingOccurrences(of: "*", with: " multiply ")
-                }
-               else if char == "%" {
-                    speechValue = speechValue!.replacingOccurrences(of: "%", with: " divide ")
+                char = String(char!.prefix(1))
+                
+            }
+            speechValue = speechValue?.replacingOccurrences(of: char!, with: " \(char ?? "") ")
+           // speechValue = speechValue?.stringByReplacingFirstOccurrenceOfString(target: char!, withString: " \(char ?? "") ")
+            
+            let arr = speechValue?.split(separator: " ")
+            
+            debugPrint("array \(arr!)")
+            var tempStr = strSpeechValue
+            arr?.forEach{ value in
+                
+                if let range = tempStr.range(of: value) {
+                    tempStr = tempStr.replacingOccurrences(of: value, with: replaceCharacterwith(str: String(value), count: value.count), options: .caseInsensitive, range: range)
+                    arrRange.append(NSRange(range, in: strSpeechValue))
+
                 }
             }
+            
+            debugPrint("Range \(arrRange)")
+        
+            
+            if char == "+" {
+                speechValue = speechValue!.replacingOccurrences(of: "+", with: " plus ")
+            }
+           else  if char == "-" {
+                speechValue = speechValue!.replacingOccurrences(of: "-", with: " minus ")
+            }
+           else if char == "*" {
+                speechValue = speechValue!.replacingOccurrences(of: "*", with: " multiply ")
+            }
+           else if char == "%" {
+                speechValue = speechValue!.replacingOccurrences(of: "%", with: " divide ")
+            }
+            
+//            else {
+//
+//
+//            }
             
             doSpeechWithString(speechValue: speechValue!)
             
@@ -284,7 +300,7 @@ class MathViewController1: UIViewController {
         
         let utterance = AVSpeechUtterance(string: speechValue)
         
-        utterance.voice = AVSpeechSynthesisVoice(language: "en-GB")
+        utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
         utterance.rate = 0.4
         APPDELEGATE.window?.isUserInteractionEnabled = false
         // AppDelegate.speechSynthesizer.delegate = APPDELEGATE
@@ -296,12 +312,19 @@ class MathViewController1: UIViewController {
 
 extension MathViewController1 : AVSpeechSynthesizerDelegate {
     
+    
+    func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didStart utterance: AVSpeechUtterance) {
+    
+        debugPrint("Start")
+        index = 0
+    }
+    
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, willSpeakRangeOfSpeechString characterRange: NSRange, utterance: AVSpeechUtterance) {
         
-        let str = utterance.speechString
-        
-        debugPrint(str.substring(characterRange))
-        
+//        let str = utterance.speechString
+//
+//        debugPrint(str.substring(characterRange))
+//
        // if let _ = Int(str.substring(characterRange)) {
             
             
@@ -316,18 +339,18 @@ extension MathViewController1 : AVSpeechSynthesizerDelegate {
 //        print(characterRange)
 //        print(utterance.speechString)
        
-        AppDelegate.isFinish = true
-        APPDELEGATE.window?.isUserInteractionEnabled = true
+        
         
     }
     
     
     func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
         
-        print("done")
         index = 0
-        
         arrRange = []
+        AppDelegate.isFinish = true
+        APPDELEGATE.window?.isUserInteractionEnabled = true
+        print("done")
         
     }
 }
@@ -353,7 +376,6 @@ extension MathViewController1: UITextFieldDelegate {
         for _ in 0..<count {
             str = str + "#"
         }
-        
         return str
     }
 }
@@ -372,5 +394,14 @@ extension String {
             let subString = self[start..<end]
             return String(subString)
         }
+    
+    func stringByReplacingFirstOccurrenceOfString(
+            target: String, withString replaceString: String) -> String
+    {
+        if let range = self.range(of: target) {
+            return self.replacingCharacters(in: range, with: replaceString)
+        }
+        return self
+    }
 }
 

@@ -82,7 +82,6 @@ class Utils {
         return result
     }
     
-    
 }
 
 extension NSDate {

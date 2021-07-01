@@ -22,8 +22,21 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         super.viewWillTransition(to: size, with: coordinator)
     }
     
+    
+    override func viewDidLoad() {
+        
+        super.viewDidLoad()
+        
+        
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
+        
         super.viewWillAppear(animated)
+        
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
+        navigationController?.navigationBar.barTintColor = .white
+        navigationController?.navigationBar.tintColor = UIColor.black
         
         Sounds.default.playMusic()
         
@@ -199,11 +212,19 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
 //            let vc = storyboard.instantiateViewController(withIdentifier: "TempViewController")
 //            self.navigationController?.pushViewController(vc, animated: true)
             let storyboard = UIStoryboard.init(name: "WriteStoryboard", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "TempViewController")
+            let vc = storyboard.instantiateViewController(withIdentifier: "WriteBoardViewController")
          // let navigationController = UINavigationController(rootViewController: vc)
           
-          vc.modalPresentationStyle = .fullScreen
-          self.present(vc, animated: true, completion: nil)
+            self.navigationController?.pushViewController(vc, animated: true)
+//          vc.modalPresentationStyle = .fullScreen
+//          self.present(vc, animated: true, completion: nil)
+        } else if (indexPath.section == 1 && indexPath.row == 9) {
+            
+            let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "CropViewController")
+            self.navigationController?.pushViewController(vc, animated: true)
+
+            
         }
     }
     
@@ -217,7 +238,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         if section == 0 {
             return 2
         }
-        return 9
+        return 10
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -227,7 +248,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
                 cell.nameLabel.text = Account.name != nil && Account.name!.count > 0 ? Account.name : "You"
                 cell.photoImageView.layer.cornerRadius = Utils.isPad ? 60.0 : 35.0
                 cell.photoImageView.layer.borderWidth = Utils.isPad ? 4.0 : 2.0
-                cell.photoImageView.layer.borderColor = UIColor.skyBlue.cgColor
+                cell.photoImageView.layer.borderColor = UIColor.black.cgColor
                 cell.photoImageView.layer.masksToBounds = true
                 if let recognizers = cell.photoImageView.gestureRecognizers {
                     for rec in recognizers {
@@ -241,13 +262,13 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
                     cell.photoImageView.image = photo
                 }
                 else {
-                    cell.photoImageView.image = UIImage.init(named: "I am")
+                    cell.photoImageView.image = UIImage.init(named: "ic_edit")
                 }
                 return cell
             }
             else {
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "InstructionsCell", for: indexPath)
-                cell.contentView.backgroundColor = UIColor.init(red: 0.05, green: 0.3, blue: 0.5, alpha: 1.0)
+                cell.contentView.backgroundColor = .black//UIColor.init(red: 0.05, green: 0.3, blue: 0.5, alpha: 1.0)
                 cell.contentView.layer.cornerRadius = 20.0
                 cell.contentView.layer.borderWidth = Utils.isPad ? 4.0 : 2.0
                 cell.contentView.layer.borderColor = UIColor.wood.cgColor
@@ -267,13 +288,14 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
             case 6: identifier = "JournalCell"
             case 7: identifier = "TextToSpeechCell"
             case 8: identifier = "WriteBoardCell"
+            case 9: identifier = "ScanToTextCell"
             default:
                 break
             }
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier,
                                                           for: indexPath) as! PuzzleCell
-            cell.titleLabel.font = UIFont.init(name: "BadaBoom BB",
-                                               size: Utils.isPad ? 40.0 : 20.0)
+           // cell.titleLabel.font = UIFont.init(name: "ObelixProBIt cyr",
+              //                                 size: Utils.isPad ? 40.0 : 20.0)
             return cell
         }
     }
@@ -336,8 +358,9 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     // MARK: - UIImagePickerControllerDelegate
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        if let pickedImage = info[UIImagePickerController.InfoKey.originalImage.rawValue] as? UIImage {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             Account.photo = pickedImage
             collectionView.reloadData()
         }

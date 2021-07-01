@@ -15,7 +15,6 @@
 		B180D3F4261DD49500689F65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B180D3F3261DD49500689F65 /* Main.storyboard */; };
 		B180D3FE261DD56300689F65 /* primer print.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B180D3F9261DD56300689F65 /* primer print.ttf */; };
 		B180D3FF261DD56300689F65 /* BADABB__.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B180D3FA261DD56300689F65 /* BADABB__.TTF */; };
-		B180D400261DD56300689F65 /* primer print bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B180D3FB261DD56300689F65 /* primer print bold.ttf */; };
 		B180D401261DD56300689F65 /* RockoFLF.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B180D3FC261DD56300689F65 /* RockoFLF.ttf */; };
 		B180D402261DD56300689F65 /* Angelique-Rose-font-FFP.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B180D3FD261DD56300689F65 /* Angelique-Rose-font-FFP.ttf */; };
 		B180D409261DD57900689F65 /* success.wav in Resources */ = {isa = PBXBuildFile; fileRef = B180D405261DD57900689F65 /* success.wav */; };
@@ -71,14 +70,35 @@
 		B180D47B261DD65600689F65 /* ArithmeticExpressionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B180D476261DD65500689F65 /* ArithmeticExpressionView.swift */; };
 		B180D47C261DD65600689F65 /* CirclesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B180D477261DD65600689F65 /* CirclesView.swift */; };
 		B180D47D261DD65600689F65 /* ArithmeticExpressionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B180D478261DD65600689F65 /* ArithmeticExpressionViewController.swift */; };
-		FD0966332626275500733D93 /* TempViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0966322626275500733D93 /* TempViewController.swift */; };
+		FD0966332626275500733D93 /* WriteBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0966322626275500733D93 /* WriteBoardViewController.swift */; };
 		FD096637262627B700733D93 /* WriteStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD096635262627B700733D93 /* WriteStoryboard.storyboard */; };
 		FD0A8E772636F47D00CCB586 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0A8E762636F47D00CCB586 /* RoundButton.swift */; };
 		FD0A8E842636FD0600CCB586 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0A8E812636FD0600CCB586 /* Calculator.swift */; };
 		FD0A8E852636FD0600CCB586 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0A8E822636FD0600CCB586 /* Double.swift */; };
 		FD0A8E862636FD0600CCB586 /* MathViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0A8E832636FD0600CCB586 /* MathViewController1.swift */; };
+		FD662DCC26772833006A55F7 /* ScanToTextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD662DCB26772832006A55F7 /* ScanToTextVC.swift */; };
+		FD83BBD726768CB0000FE4DD /* +UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD83BBD426768CAF000FE4DD /* +UIImage.swift */; };
+		FD83BBD826768CB0000FE4DD /* ScaledElementProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD83BBD526768CB0000FE4DD /* ScaledElementProcessor.swift */; };
+		FD83BBE026768F4C000FE4DD /* ObelixPro-cyr.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD83BBDC26768F4B000FE4DD /* ObelixPro-cyr.ttf */; };
+		FD83BBE126768F4C000FE4DD /* ObelixProBIt-cyr.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD83BBDD26768F4C000FE4DD /* ObelixProBIt-cyr.ttf */; };
+		FD83BBE226768F4C000FE4DD /* ObelixProB-cyr.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD83BBDE26768F4C000FE4DD /* ObelixProB-cyr.ttf */; };
+		FD83BBE326768F4C000FE4DD /* ObelixProIt-cyr.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD83BBDF26768F4C000FE4DD /* ObelixProIt-cyr.ttf */; };
+		FDA34D6D26771B3600B40781 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA34D6326771B3100B40781 /* UIView+.swift */; };
+		FDA34D6E26771B3600B40781 /* CropResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA34D6426771B3100B40781 /* CropResult.swift */; };
+		FDA34D6F26771B3600B40781 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA34D6526771B3100B40781 /* UIImage+.swift */; };
+		FDA34D7026771B3600B40781 /* LineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA34D6626771B3200B40781 /* LineButton.swift */; };
+		FDA34D7126771B3600B40781 /* BezierPath+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA34D6726771B3300B40781 /* BezierPath+.swift */; };
+		FDA34D7226771B3600B40781 /* CropDimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA34D6826771B3300B40781 /* CropDimView.swift */; };
+		FDA34D7326771B3600B40781 /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA34D6926771B3400B40781 /* UIImageView+.swift */; };
+		FDA34D7426771B3600B40781 /* NSLayoutConstraint+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA34D6A26771B3500B40781 /* NSLayoutConstraint+.swift */; };
+		FDA34D7526771B3600B40781 /* CropPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA34D6B26771B3600B40781 /* CropPickerView.swift */; };
+		FDA34D7626771B3600B40781 /* CropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA34D6C26771B3600B40781 /* CropView.swift */; };
+		FDAB47F7267AA7DD0000DF39 /* primer print bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FDAB47F6267AA7DD0000DF39 /* primer print bold.otf */; };
+		FDAB47F9267AAA5F0000DF39 /* ComicSansMSBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FDAB47F8267AAA5F0000DF39 /* ComicSansMSBold.ttf */; };
+		FDAB47FB267AABA70000DF39 /* ComicSansMSRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FDAB47FA267AABA70000DF39 /* ComicSansMSRegular.ttf */; };
 		FDB5C1A82620E78100F0DCFC /* PhraseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB5C1A72620E78100F0DCFC /* PhraseViewController.swift */; };
 		FDB5C1AB2620E7CE00F0DCFC /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB5C1AA2620E7CE00F0DCFC /* Toast.swift */; };
+		FDCFE9B02676BDD5009C920D /* GetTextFromScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCFE9AF2676BDD5009C920D /* GetTextFromScanViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,7 +112,6 @@
 		B180D3F3261DD49500689F65 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B180D3F9261DD56300689F65 /* primer print.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "primer print.ttf"; sourceTree = "<group>"; };
 		B180D3FA261DD56300689F65 /* BADABB__.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = BADABB__.TTF; sourceTree = "<group>"; };
-		B180D3FB261DD56300689F65 /* primer print bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "primer print bold.ttf"; sourceTree = "<group>"; };
 		B180D3FC261DD56300689F65 /* RockoFLF.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = RockoFLF.ttf; sourceTree = "<group>"; };
 		B180D3FD261DD56300689F65 /* Angelique-Rose-font-FFP.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Angelique-Rose-font-FFP.ttf"; sourceTree = "<group>"; };
 		B180D405261DD57900689F65 /* success.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = success.wav; sourceTree = "<group>"; };
@@ -149,15 +168,36 @@
 		B180D477261DD65600689F65 /* CirclesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CirclesView.swift; sourceTree = "<group>"; };
 		B180D478261DD65600689F65 /* ArithmeticExpressionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArithmeticExpressionViewController.swift; sourceTree = "<group>"; };
 		D51E2BE336DCFD25DF6B3731 /* Pods_JoackyWriter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JoackyWriter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD0966322626275500733D93 /* TempViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempViewController.swift; sourceTree = "<group>"; };
+		FD0966322626275500733D93 /* WriteBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteBoardViewController.swift; sourceTree = "<group>"; };
 		FD096636262627B700733D93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/WriteStoryboard.storyboard; sourceTree = "<group>"; };
 		FD0A8E762636F47D00CCB586 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		FD0A8E812636FD0600CCB586 /* Calculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		FD0A8E822636FD0600CCB586 /* Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		FD0A8E832636FD0600CCB586 /* MathViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathViewController1.swift; sourceTree = "<group>"; };
+		FD662DCB26772832006A55F7 /* ScanToTextVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanToTextVC.swift; sourceTree = "<group>"; };
+		FD83BBD426768CAF000FE4DD /* +UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "+UIImage.swift"; sourceTree = "<group>"; };
+		FD83BBD526768CB0000FE4DD /* ScaledElementProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaledElementProcessor.swift; sourceTree = "<group>"; };
+		FD83BBDC26768F4B000FE4DD /* ObelixPro-cyr.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ObelixPro-cyr.ttf"; sourceTree = "<group>"; };
+		FD83BBDD26768F4C000FE4DD /* ObelixProBIt-cyr.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ObelixProBIt-cyr.ttf"; sourceTree = "<group>"; };
+		FD83BBDE26768F4C000FE4DD /* ObelixProB-cyr.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ObelixProB-cyr.ttf"; sourceTree = "<group>"; };
+		FD83BBDF26768F4C000FE4DD /* ObelixProIt-cyr.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ObelixProIt-cyr.ttf"; sourceTree = "<group>"; };
+		FDA34D6326771B3100B40781 /* UIView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		FDA34D6426771B3100B40781 /* CropResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropResult.swift; sourceTree = "<group>"; };
+		FDA34D6526771B3100B40781 /* UIImage+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		FDA34D6626771B3200B40781 /* LineButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineButton.swift; sourceTree = "<group>"; };
+		FDA34D6726771B3300B40781 /* BezierPath+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BezierPath+.swift"; sourceTree = "<group>"; };
+		FDA34D6826771B3300B40781 /* CropDimView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropDimView.swift; sourceTree = "<group>"; };
+		FDA34D6926771B3400B40781 /* UIImageView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
+		FDA34D6A26771B3500B40781 /* NSLayoutConstraint+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+.swift"; sourceTree = "<group>"; };
+		FDA34D6B26771B3600B40781 /* CropPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropPickerView.swift; sourceTree = "<group>"; };
+		FDA34D6C26771B3600B40781 /* CropView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropView.swift; sourceTree = "<group>"; };
+		FDAB47F6267AA7DD0000DF39 /* primer print bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "primer print bold.otf"; sourceTree = "<group>"; };
+		FDAB47F8267AAA5F0000DF39 /* ComicSansMSBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ComicSansMSBold.ttf; sourceTree = "<group>"; };
+		FDAB47FA267AABA70000DF39 /* ComicSansMSRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ComicSansMSRegular.ttf; sourceTree = "<group>"; };
 		FDB5C1A72620E78100F0DCFC /* PhraseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhraseViewController.swift; sourceTree = "<group>"; };
 		FDB5C1AA2620E7CE00F0DCFC /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		FDB5C21D2620F86B00F0DCFC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDCFE9AF2676BDD5009C920D /* GetTextFromScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTextFromScanViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,9 +246,6 @@
 				B180D41D261DD5CF00689F65 /* UI */,
 				B180D40F261DD5A200689F65 /* Core */,
 				B180D3F8261DD54B00689F65 /* Resource */,
-				B170E29D261DC5630088EADE /* RecognizedInk.swift */,
-				B170E29E261DC5630088EADE /* StrokeManager.swift */,
-				FD0966322626275500733D93 /* TempViewController.swift */,
 				B180D3F3261DD49500689F65 /* Main.storyboard */,
 				B170E27F261DC4970088EADE /* Assets.xcassets */,
 				B170E281261DC4970088EADE /* LaunchScreen.storyboard */,
@@ -220,11 +257,18 @@
 		B180D3F8261DD54B00689F65 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				FDA34D6226771B1E00B40781 /* CropPickerView */,
+				FD83BBDC26768F4B000FE4DD /* ObelixPro-cyr.ttf */,
+				FDAB47F8267AAA5F0000DF39 /* ComicSansMSBold.ttf */,
+				FDAB47FA267AABA70000DF39 /* ComicSansMSRegular.ttf */,
+				FD83BBDE26768F4C000FE4DD /* ObelixProB-cyr.ttf */,
+				FD83BBDD26768F4C000FE4DD /* ObelixProBIt-cyr.ttf */,
+				FDAB47F6267AA7DD0000DF39 /* primer print bold.otf */,
+				FD83BBDF26768F4C000FE4DD /* ObelixProIt-cyr.ttf */,
 				FD0A8E762636F47D00CCB586 /* RoundButton.swift */,
 				B180D404261DD56B00689F65 /* Sounds */,
 				B180D3FD261DD56300689F65 /* Angelique-Rose-font-FFP.ttf */,
 				B180D3FA261DD56300689F65 /* BADABB__.TTF */,
-				B180D3FB261DD56300689F65 /* primer print bold.ttf */,
 				B180D3F9261DD56300689F65 /* primer print.ttf */,
 				B180D3FC261DD56300689F65 /* RockoFLF.ttf */,
 			);
@@ -271,6 +315,8 @@
 		B180D425261DD5E900689F65 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				FDCFE9AE2676BB38009C920D /* WriteBoard */,
+				FDE8E7F0267677B1006EDFD4 /* ScanToText */,
 				FD0A8E812636FD0600CCB586 /* Calculator.swift */,
 				FD0A8E822636FD0600CCB586 /* Double.swift */,
 				FD0A8E832636FD0600CCB586 /* MathViewController1.swift */,
@@ -358,6 +404,44 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FDA34D6226771B1E00B40781 /* CropPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				FDA34D6726771B3300B40781 /* BezierPath+.swift */,
+				FDA34D6826771B3300B40781 /* CropDimView.swift */,
+				FDA34D6B26771B3600B40781 /* CropPickerView.swift */,
+				FDA34D6426771B3100B40781 /* CropResult.swift */,
+				FDA34D6C26771B3600B40781 /* CropView.swift */,
+				FDA34D6626771B3200B40781 /* LineButton.swift */,
+				FDA34D6A26771B3500B40781 /* NSLayoutConstraint+.swift */,
+				FDA34D6526771B3100B40781 /* UIImage+.swift */,
+				FDA34D6926771B3400B40781 /* UIImageView+.swift */,
+				FDA34D6326771B3100B40781 /* UIView+.swift */,
+			);
+			path = CropPickerView;
+			sourceTree = "<group>";
+		};
+		FDCFE9AE2676BB38009C920D /* WriteBoard */ = {
+			isa = PBXGroup;
+			children = (
+				B170E29D261DC5630088EADE /* RecognizedInk.swift */,
+				B170E29E261DC5630088EADE /* StrokeManager.swift */,
+				FD0966322626275500733D93 /* WriteBoardViewController.swift */,
+			);
+			path = WriteBoard;
+			sourceTree = "<group>";
+		};
+		FDE8E7F0267677B1006EDFD4 /* ScanToText */ = {
+			isa = PBXGroup;
+			children = (
+				FD662DCB26772832006A55F7 /* ScanToTextVC.swift */,
+				FD83BBD426768CAF000FE4DD /* +UIImage.swift */,
+				FD83BBD526768CB0000FE4DD /* ScaledElementProcessor.swift */,
+				FDCFE9AF2676BDD5009C920D /* GetTextFromScanViewController.swift */,
+			);
+			path = ScanToText;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -418,19 +502,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B180D400261DD56300689F65 /* primer print bold.ttf in Resources */,
+				FDAB47FB267AABA70000DF39 /* ComicSansMSRegular.ttf in Resources */,
 				B180D453261DD62800689F65 /* phrase.plist in Resources */,
 				B180D3FE261DD56300689F65 /* primer print.ttf in Resources */,
 				B180D3FF261DD56300689F65 /* BADABB__.TTF in Resources */,
 				B170E283261DC4970088EADE /* LaunchScreen.storyboard in Resources */,
+				FD83BBE226768F4C000FE4DD /* ObelixProB-cyr.ttf in Resources */,
 				B180D40B261DD57900689F65 /* correct_tracing.wav in Resources */,
+				FD83BBE326768F4C000FE4DD /* ObelixProIt-cyr.ttf in Resources */,
 				B180D409261DD57900689F65 /* success.wav in Resources */,
+				FDAB47F9267AAA5F0000DF39 /* ComicSansMSBold.ttf in Resources */,
 				FD096637262627B700733D93 /* WriteStoryboard.storyboard in Resources */,
+				FDAB47F7267AA7DD0000DF39 /* primer print bold.otf in Resources */,
 				B170E280261DC4970088EADE /* Assets.xcassets in Resources */,
 				B180D40A261DD57900689F65 /* background.mp3 in Resources */,
+				FD83BBE026768F4C000FE4DD /* ObelixPro-cyr.ttf in Resources */,
 				B180D40C261DD57900689F65 /* trace.wav in Resources */,
 				B180D402261DD56300689F65 /* Angelique-Rose-font-FFP.ttf in Resources */,
 				B180D401261DD56300689F65 /* RockoFLF.ttf in Resources */,
+				FD83BBE126768F4C000FE4DD /* ObelixProBIt-cyr.ttf in Resources */,
 				B180D3F4261DD49500689F65 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,22 +598,30 @@
 				B180D45E261DD63D00689F65 /* SubCategoryModel.swift in Sources */,
 				B180D471261DD64C00689F65 /* UIBezierPath.swift in Sources */,
 				B180D450261DD62800689F65 /* ChoiceSubCategoryViewController.swift in Sources */,
+				FDA34D7026771B3600B40781 /* LineButton.swift in Sources */,
 				B180D418261DD5AB00689F65 /* String.swift in Sources */,
 				B180D43B261DD61700689F65 /* SentencesViewController.swift in Sources */,
+				FDA34D7226771B3600B40781 /* CropDimView.swift in Sources */,
+				FDA34D7426771B3600B40781 /* NSLayoutConstraint+.swift in Sources */,
 				B180D444261DD61700689F65 /* WordsViewController.swift in Sources */,
 				B180D43C261DD61700689F65 /* SpeechViewController.swift in Sources */,
 				B180D423261DD5D900689F65 /* UIColor.swift in Sources */,
 				B180D421261DD5D900689F65 /* UIImage.swift in Sources */,
 				B180D43A261DD61700689F65 /* PuzzleCell.swift in Sources */,
+				FDCFE9B02676BDD5009C920D /* GetTextFromScanViewController.swift in Sources */,
 				B180D445261DD61700689F65 /* NumbersViewController.swift in Sources */,
+				FDA34D6D26771B3600B40781 /* UIView+.swift in Sources */,
 				B180D443261DD61700689F65 /* SettingsViewController.swift in Sources */,
+				FDA34D7126771B3600B40781 /* BezierPath+.swift in Sources */,
 				B170E2A0261DC5630088EADE /* StrokeManager.swift in Sources */,
 				B180D416261DD5AB00689F65 /* Account.swift in Sources */,
 				B180D440261DD61700689F65 /* DrawItemCell.swift in Sources */,
+				FDA34D6F26771B3600B40781 /* UIImage+.swift in Sources */,
 				FDB5C1AB2620E7CE00F0DCFC /* Toast.swift in Sources */,
 				B180D479261DD65600689F65 /* ExpressionSolvingViewController.swift in Sources */,
 				B180D46D261DD64C00689F65 /* DrawingView.swift in Sources */,
 				B180D419261DD5AB00689F65 /* Utils.swift in Sources */,
+				FD662DCC26772833006A55F7 /* ScanToTextVC.swift in Sources */,
 				B180D47C261DD65600689F65 /* CirclesView.swift in Sources */,
 				B180D441261DD61700689F65 /* CustomRewardViewController.swift in Sources */,
 				B180D45D261DD63D00689F65 /* ContactModel.swift in Sources */,
@@ -534,10 +632,14 @@
 				B180D46F261DD64C00689F65 /* InsetLabel.swift in Sources */,
 				B180D47A261DD65600689F65 /* MathViewController.swift in Sources */,
 				B180D451261DD62800689F65 /* CameraHandler.swift in Sources */,
-				FD0966332626275500733D93 /* TempViewController.swift in Sources */,
+				FDA34D7326771B3600B40781 /* UIImageView+.swift in Sources */,
+				FD0966332626275500733D93 /* WriteBoardViewController.swift in Sources */,
 				FD0A8E852636FD0600CCB586 /* Double.swift in Sources */,
 				B180D43F261DD61700689F65 /* LettersViewController.swift in Sources */,
 				B180D41B261DD5AB00689F65 /* Sounds.swift in Sources */,
+				FDA34D7626771B3600B40781 /* CropView.swift in Sources */,
+				FDA34D7526771B3600B40781 /* CropPickerView.swift in Sources */,
+				FD83BBD826768CB0000FE4DD /* ScaledElementProcessor.swift in Sources */,
 				B180D47D261DD65600689F65 /* ArithmeticExpressionViewController.swift in Sources */,
 				B180D422261DD5D900689F65 /* CALayer.swift in Sources */,
 				FD0A8E862636FD0600CCB586 /* MathViewController1.swift in Sources */,
@@ -554,9 +656,11 @@
 				B180D45F261DD63D00689F65 /* CategoryModel.swift in Sources */,
 				B180D43D261DD61700689F65 /* SentenceCell.swift in Sources */,
 				B180D452261DD62800689F65 /* DetailViewController.swift in Sources */,
+				FD83BBD726768CB0000FE4DD /* +UIImage.swift in Sources */,
 				B180D470261DD64C00689F65 /* Numbers.swift in Sources */,
 				B180D437261DD61700689F65 /* HomeViewController.swift in Sources */,
 				B170E29F261DC5630088EADE /* RecognizedInk.swift in Sources */,
+				FDA34D6E26771B3600B40781 /* CropResult.swift in Sources */,
 				B180D46A261DD64C00689F65 /* LowercaseLetters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -711,7 +815,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 8DLVSYMYK7;
 				ENABLE_BITCODE = YES;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
@@ -721,7 +825,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.5;
+				MARKETING_VERSION = 1.0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.picaboo.com.JaclynSia.JoackyWriter1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -737,7 +841,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 8DLVSYMYK7;
 				ENABLE_BITCODE = YES;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
@@ -747,7 +851,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.5;
+				MARKETING_VERSION = 1.0.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.picaboo.com.JaclynSia.JoackyWriter1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

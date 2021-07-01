@@ -286,8 +286,9 @@ class CustomWordsViewController: UIViewController, UIImagePickerControllerDelega
     
     // MARK: - UIImagePickerControllerDelegate
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        if let pickedImage = info[UIImagePickerController.InfoKey.originalImage.rawValue] as? UIImage {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             if pickedImage.size.width > 500.0 {
                 if let compressed = pickedImage.resized(toWidth: 500.0) {
                     imageView.image = compressed

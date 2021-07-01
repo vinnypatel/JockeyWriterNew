@@ -41,7 +41,7 @@ class DrawingViewController: UIViewController, DrawingViewDelegate, UITextFieldD
     private var padFixedFontSize = 400.0 as CGFloat
     private var scrollviewWidth = 0 as CGFloat
     private var totalStringLength = 0 as CGFloat
-    private let fontName = "RockoFLF" as String
+    private var fontName = "RockoFLF" as String
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,8 +53,10 @@ class DrawingViewController: UIViewController, DrawingViewDelegate, UITextFieldD
             UIDevice.current.setValue(value, forKey: "orientation")
             
         }
-        
-        
+//        if text.contains("a") {
+//
+//            fontName = "ComicSansMS"
+//        }
         trainBackImgView.isHidden = true
         
         if let reward = Account.reward {

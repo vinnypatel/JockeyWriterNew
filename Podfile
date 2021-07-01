@@ -1,4 +1,4 @@
-# Uncomment the next line to define a global platform for your project
+# Uncomment the next line to define a global platform for your project/Users/kenitinfotech/Downloads/JoackyWriterFinal/Podfile
 platform :ios, '11.0'
 
 target 'JoackyWriter' do
@@ -12,5 +12,7 @@ target 'JoackyWriter' do
   pod 'FXKeychain'
   pod 'StepSlider'
   pod 'MKProgress'
+  pod 'MLKitTextRecognition'
+  pod 'IQKeyboardManagerSwift'
  
 end
